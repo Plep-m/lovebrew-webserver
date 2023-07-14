@@ -1,0 +1,37 @@
+.mdl-dialog {
+    background-color: #383838;
+    width: 25vw;
+    max-height: 65vh;
+    border-radius: 4px;
+    color: whitesmoke;
+    font-size: var(--font-size);
+    animation: showDialog 0.5s ease 0s 1 normal forwards;
+}
+
+.mdl-dialog__title {
+    color: whitesmoke;
+    display: flex;
+}
+
+.mdl-dialog__actions {
+    color: #c1c1c1;
+    display: flex;
+}
+
+.mdl-dialog__content {
+    color: #c1c1c1;
+}
+
+.mdl-button {
+    color: #c1c1c1;
+}
+
+@keyframes showDialog {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

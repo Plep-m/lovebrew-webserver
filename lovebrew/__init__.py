@@ -50,6 +50,10 @@ def create_app(test_config=None) -> Flask:
             }
         )
 
+    @app.route("/form", methods=["GET"])
+    def form():
+        return render_template("creator.html")
+
     @app.route("/data", methods=["POST"])
     def data():
         # make sure the user uploaded files
